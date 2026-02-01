@@ -1,9 +1,14 @@
 module.exports.colors = [];
 
-module.exports.init = function (shard) {
+module.exports.init = function () {
   var url;
 
-  url = `https://www.leagueofautomatednations.com/map/shard3/alliances.js`;
+  var shard = module.getCurrentShard();
+  if (!shard) {
+    shard = "shard3";
+  }
+
+  url = `https://www.leagueofautomatednations.com/map/${shard}/alliances.js`;
 
   module.dispatchEvent({ event: "xhttp", url: url }, function (response) {
     try {
