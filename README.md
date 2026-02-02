@@ -49,3 +49,5 @@ Also take a look at the [settings.json](https://github.com/stybbe/Screeps-SC/blo
 4. If it's the first time the module is injected to the page session the `module.exports.init` function will be called in the module. All other `onUpdate` or `onCompleted` triggers will call the `module.exports.update` function.
 
 ## [FAQ](https://github.com/stybbe/Screeps-SC/wiki/FAQ)
+
+## lets rewrite this shit for the V3
